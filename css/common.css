@@ -1,0 +1,382 @@
+@charset "utf-8";
+
+body{
+  font-size: 16px;
+  font-family: 'Nanum Gothic', arial, sans-serif; 
+  font-style: normal;
+  background-color: #090909;
+  color: #f4f4f4;
+  line-height: 140%;
+}
+a{color: #f4f4f4; text-decoration: none;}
+/* 본문 텍스트 */
+.txtXS {font-size: 10px; }
+.txtS {font-size: 14px; }
+.txtM {font-size: 16px; }
+.txtL {font-size: 20px; }
+.txtXL {font-size: 24px; }
+/* 제목 */
+.titleM {font-family: 'Do Hyeon',sans-serif; font-size: 20px; }
+.titleL {font-family: 'Do Hyeon',sans-serif; font-size: 35px;}
+.bold {font-weight: bold;}
+section h2{
+    text-align: center;
+    margin: 200px 0px 100px 0px;
+    text-shadow: 0 0 10px #f4f4f4;
+  }
+section h3{
+  text-align: left;
+  margin: 50px auto 50px;
+}
+.hidden {display: none;} /*articel 제목 숨기기*/
+
+/* 헤더 */
+#header{
+  width: 100%; height: 80px;
+  position: fixed; top: 0px;
+  display: flex;
+  z-index: 10000;
+}
+
+.nav_bg{background-color: rgba(9, 9, 9, .9);}
+
+#header > .wrap01{
+  width: 100%;
+  height: 80px;
+  position: relative;
+}
+
+#header h1 img{
+  width: 200px;
+  position: absolute;
+  left: 0px; top:8px;
+  z-index: 1500;
+}
+
+#header #gnb:hover::after{
+  display:block;
+  content:"";
+  width:100%;
+  height:3px;
+  background-color:#064D97;
+  position:fixed;top:80px;left:0px;
+}
+
+
+/* 네비게이션 */
+#gnb{
+  width: 100%; height: 80px;
+  background-color: rgba(9, 9, 9, .8);
+  line-height: 30px;
+  overflow: hidden;
+  transition: 0.5s;
+  position: relative;
+}
+  #gnb:hover{height: 250px;}
+  #gnb > ul{
+    padding-top: 30px;
+    display: flex;
+    justify-content: right;
+  }
+    #gnb > ul > li{
+      text-align: center;
+      margin: 0px 30px;
+    } 
+      #gnb > ul > li > a:hover{text-decoration: underline;}
+
+.sub{
+  padding: 20px 0px;
+  transform: translateY(20px);
+  /* display: none; */
+}
+  .sub a:hover{text-decoration: underline;}
+
+
+
+/* NCsoft소개 */
+.intro{background-color: rgba(6, 77, 151, .3);}
+  .intro > p{text-align: center; padding: 40px;}
+.target_box{width: 1000px; margin: 0 auto;}
+.target_box figure {position: relative;}
+  .target_box figure img{
+    width: 100%;
+    border-radius: 20px;
+    margin-top: 60px;
+    filter: brightness(0.8);
+  }
+  .target_box figcaption{
+    position: absolute;
+    right: 0px; bottom: 0px;
+    padding: 20px;
+  }
+  .target_box figure figcaption i {
+    color: #f4f4f4;
+    clip-path: circle(46%);
+    font-size: 60px;
+    transition:0.5s;
+    display: inline-block;
+  }
+    .target_box figure figcaption:hover i{
+      color: rgba(6, 77, 151, .8);
+      background-color: #f4f4f4;
+      cursor: pointer;
+      transform: rotate(180deg);
+    }
+    .target_box figure:hover img {
+      filter: brightness(1.5);
+    }
+
+.overlay {
+  width: 500px; 
+  height: auto;
+  background-color: #f4f4f4;
+  border-radius: 20px;
+  color: #090909; 
+  display: none;
+  justify-content: center; align-items: center;
+  z-index: 3000;
+  padding: 80px 50px 50px;
+
+  position: fixed;
+  top: 50%; left:50%;
+  transform: translate(-50%, -50%);
+}
+.overlay.active {display: flex;}
+.overlay_content {
+  text-align: left;
+  line-height: 25px;
+}
+  .overlay_content > dt {padding-bottom: 20px;}
+.close_btn{
+  position: absolute;
+  top: 20px; right: 30px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  width: 30px; height: 30px; 
+  padding: 0;
+}
+  .close_btn i{
+    position: static; 
+    top: auto;
+    right: auto;
+    font-size: 30px;
+    color: #090909;
+    transition: 0.5s;
+  }
+    .close_btn:hover i{
+      cursor: pointer;
+      transform: rotate(180deg);
+      color: #064D97;
+    }
+
+
+
+/* 기술 */
+.yellow {color: #FFB367; margin-bottom: 10px;}
+.tech_box{
+  display: flex; flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  width: 1200px; margin: 0 auto;
+}
+  .tech_box > article{
+    width: 550px; height: 180px; 
+    border-radius: 20px;
+    background-color: rgba(6, 77, 151, .3); 
+    display: flex; align-items: center;
+    gap: 25px;
+    padding: 20px;
+    transition: 0.5s;
+    /*박스 크기 오버 방지*/
+    box-sizing: border-box;
+  }
+    .tech_box > article:hover{
+      border: 2px solid #f4f4f4;
+      box-shadow: 0px 0px 20px 6px #f5f5f5a3;
+    }
+    .tech_box > article > img{width: 150px; height: 150px;}
+.wrap03 > p{
+  text-align: center;
+  margin-top: 50px;
+  text-shadow: 0 0 10px #f4f4f4;
+}
+
+/* 비전로드맵 */
+.load_total{
+  width: 900px;
+  margin: 150px auto 0;
+}
+  .load{display: flex; gap: 40px;}
+    .load_box{
+      width: 460px; height: 130px;
+      display: flex; align-items: center;
+      gap: 10px;
+      margin-bottom: 30px;
+      transition: 0.5s;
+      /*박스 크기 오버 방지*/
+      box-sizing: border-box;
+    }
+      .load_box:hover .load_txt{
+        border: 1px solid #f4f4f4;
+        box-shadow: 0px 0px 20px 2px #ffb36761;
+      }
+      .load_box img{width: auto; height: 130px;}
+      .load_txt{ 
+        width: 450px; height: 120px;
+        background-color: rgba(6, 77, 151, .3);
+        border-radius: 15px;
+      }
+        .load_txt li{padding: 10px 0px 0px 10px;}
+        
+  .load_right{width: 357px; position: relative;}
+    .load_right img{width: 100%; border-radius: 15px;}
+    .p_s_btn{
+      font-size: 30px; color: #333333;
+      cursor: pointer;
+
+      position:absolute;
+      left : 46%; bottom: 50px;
+    }
+      /* 버튼 사이 간격 */
+      .play_btn:hover{color: #f4f4f4;}
+      .stop_btn:hover{color: #f4f4f4;}
+      /* 초기 상태: 재생 버튼 숨기기 */
+      .play_btn {display: none;}
+
+/* 채용 */
+.emp_total{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+  .emp_total > h3 {margin-left: 600px;}
+  .emp_box{
+    background-color: rgba(6, 77, 151, .3);
+    width: 700px; height: 150px;
+    border-radius: 15px;
+    padding: 15px 0px 0px 20px;
+    margin: 0 auto 20px;
+    transition: 0.5s;
+  }
+    .emp_box:hover{
+      background-color: rgba(244, 244, 244, .5);
+      cursor: pointer;
+      transform: scale(1.1);
+    }
+    .emp_box:hover .blue {color: #064D97;}
+    .emp_box > ul{line-height: 35px;}
+      .emp_tag > span{
+        height: 10px;
+        padding: 5px 10px;
+        gap: 10px;
+        border-radius: 100px;
+      }
+        .emp_tag .bg_b{background-color: #064D97;}
+        .emp_tag .bg_p{background-color: #EF8381;}
+        .emp_tag .bg_y{background-color: #FFB367;}
+        .emp_tag .bg_g{background-color: #333333;}
+
+          .emp_total > h3 {align-self: flex-start;}
+
+/* 소식 */
+.news_total{
+  width: 100%; height:1000px; 
+  background-color: rgba(6, 77, 151, .3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+  .news_total > ul{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+  }
+    .news_box{
+      width: 320px; height: 450px;
+      background-color: #f4f4f4;
+      border-radius: 10px;
+      overflow: hidden;
+      position: relative;
+      transition: 0.5s;
+      cursor: pointer;
+    }
+      .news_box:hover{transform: scale(1.1);}
+      .news_box > figure > img{
+        width: 100%;
+        transform: scale(1.3) translate(0,20px);
+      }
+        .news_box > figure > figcaption > p:first-child{
+          color: #090909;
+          line-height: 140%;
+          position: absolute; left: 15px; top: 250px;
+          padding: 10px;
+        }
+        .news_box > figure > figcaption > p:last-child{
+          color: #333333;
+          position: absolute; right: 15px; bottom: 20px;
+        }
+
+/* 버튼 */
+.btn{
+  background-color: rgba(244, 244, 244, .5);
+  color: #f4f4f4; font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+  display: block;
+  margin: 40px auto 100px;
+}
+  .btn > p{display: inline;}
+  .btn > i{font-size: 20px;}
+  .btn:hover{background-color: rgba(6, 77, 151, .8);}
+  .news_total .btn {margin-bottom: 0;}
+
+/* 푸터 */
+footer{
+  width: 100%; height: 320px;
+  margin-top: 0;
+}
+/* 푸터 상단 */
+.f_top {
+  
+  width: 1440px; height: 143px;
+  margin: 0 auto;
+}
+#gnb02{
+  width: 1140px;
+  line-height: 30px;
+  /* background-color: #ff0000; */
+}
+  #gnb02 > ul{
+    padding-top: 30px;
+    display: flex;
+    justify-content: right;
+
+  }
+    #gnb02 > ul > li{
+      text-align: center;
+      margin: 0px 30px;
+    } 
+      #gnb02 a:hover{text-decoration: underline;}
+
+/* 푸터하단 */
+.wrap02{
+  display: flex;
+  justify-content: center;
+  padding-top: 45px;
+}
+.f_bottom img {
+  width: 100px;
+  margin-right: 50px;
+}
+.f_bottom p{
+  display: inline-block;
+}
+
+footer address{
+  display: flex;
+  justify-content: center;
+  line-height: 42px;
+}
