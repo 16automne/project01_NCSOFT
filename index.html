@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NCsoft</title>
+  <!-- 파비콘 연결 -->
+  <link rel="shortcut icon" type="image/x-icon" href="./img/favicon_16.ico">
+  <!-- css -->
+  <link href="./css/reset.css" rel="stylesheet" type="text/css">
+  <link href="./css/main.css" rel="stylesheet" type="text/css">
+  <link href="./css/common.css" rel="stylesheet" type="text/css">
+  <!-- 스와이퍼 -->
+  <link href="./css/swiper-bundle.min.css" rel="stylesheet" type="text/css">
+  <!-- 폰트 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Nanum+Gothic&display=swap" rel="stylesheet">
+  <!-- icon -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+</head>
+<body>
+  <!-- HEADER -->
+  <header id="header">
+    <div class="wrap01">
+      <!-- 로고 -->
+      <h1>
+        <a href="index.html" title="메인화면으로 이동">
+          <img src="./img/main_log01.png" alt="엔씨소프트 로고">
+        </a>
+      </h1>
+      <!-- 네비게이션 -->
+      <nav id="gnb" class="txtS">
+        <ul>
+          <li>
+            <a href="#cont1" title="엔씨소프트" class="titleM">NCsoft</a>
+            <ul class="sub">
+              <li><a href="#" title="기업 소개">기업 소개</a></li>
+              <li><a href="#" title="연혁">연혁</a></li>
+              <li><a href="#" title="가치와 목표">가치와 목표</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#cont2" title="게임" class="titleM">게임</a>
+            <ul class="sub">
+              <li><a href="#" title="전체게임과 신작">전체게임&amp;신작</a></li>
+              <li><a href="#" title="인기게임">인기게임</a></li>
+              <li><a href="#" title="e스포츠와 커뮤니티">e스포츠&amp;커뮤니티</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#cont3" title="기술과 혁신" class="titleM">기술&amp;혁신</a>
+            <ul class="sub">
+              <li><a href="#" title="AI연구">AI연구</a></li>
+              <li><a href="#" title="메타버스와 신규플랫폼">메타버스&amp;신규플랫폼</a></li>
+              <li><a href="#" title="개발기술과 연구성과">개발기술&amp;연구성과</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#cont4" title="경영" class="titleM">경영</a>
+            <ul class="sub">
+              <li><a href="#" title="esg연혁">ESG 연혁</a></li>
+              <li><a href="#" title="사회공헌과 다양성">사회공헌&amp;다양성</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#cont5" title="소식과 채용" class="titleM">소식&amp;채용</a>
+            <ul class="sub">
+              <li><a href="#" title="뉴스와 보도자료">뉴스&amp;보도자료</a></li>
+              <li><a href="#" title="영상과 이벤트">영상&amp;이벤트</a></li>
+              <li><a href="#" title="체용공고와 기업문화">채용공고&amp;기업문화</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- MAIN -->
+  <main>
+    <!-- 메인 슬라이드 -->
+    <article class="main_visual txtL">
+      <h3 class="hidden">메인슬라이드</h3>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="./img/main_slide01.png" alt="슬라이드1">
+            <button class="btn1" type="button"><img src="./img/apple.png" alt="애플 앱스토어로 이동"></button>
+            <button class="btn2" type="button"><img src="./img/google.png" alt="구글 플레이스토어로 이동"></button>
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/main_slide02.png" alt="슬라이드2">
+            <button class="btn1" type="button"><img src="./img/apple.png" alt="애플 앱스토어로 이동"></button>
+            <button class="btn2" type="button"><img src="./img/google.png" alt="구글 플레이스토어로 이동"></button>
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/main_slide03.png" alt="슬라이드3">
+            <button class="btn1" type="button"><img src="./img/apple.png" alt="애플 앱스토어로 이동"></button>
+            <button class="btn2" type="button"><img src="./img/google.png" alt="구글 플레이스토어로 이동"></button>
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/main_slide04.png" alt="슬라이드4">
+            <button class="btn1" type="button"><img src="./img/apple.png" alt="애플 앱스토어로 이동"></button>
+            <button class="btn2" type="button"><img src="./img/google.png" alt="구글 플레이스토어로 이동"></button>
+          </div>
+        </div>
+      
+      <!-- 좌우버튼 -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <!-- 컨트롤 버튼 -->
+      <div class="swiper-pagination">
+          <span class="swiper-pagination-bullet"></span>
+          <span class="swiper-pagination-bullet"></span>
+          <span class="swiper-pagination-bullet"></span>
+          <span class="swiper-pagination-bullet"></span>
+      </div>
+    </div>
+    </article>
+
+    <!-- 우측하단 토글 버튼 -->
+    <article>
+      <h3 class="hidden">우측하단 토글버튼</h3>
+      <input type="checkbox" id="toggle">
+      <label for="toggle" class="more_btn">
+        <!-- 더보기 버튼 -->
+        <i class="bi bi-filter-circle"></i>
+      </label>
+      <aside>
+        <ul class="toggle_list">
+          <li class="txtL bold"><i class="bi bi-globe-americas"></i> 언어변경</li>
+          <li class="txtL bold"><i class="bi bi-newspaper"></i> 회사뉴스</li>
+          <li class="txtL bold"><i class="bi bi-folder"></i> IR자료실</li>
+          <li class="txtL bold"><i class="bi bi-person-badge"></i> 채용</li>
+          <li class="txtL bold"><i class="bi bi-compass"></i> 오시는 길</li>
+        </ul>
+        <!-- 닫기버튼 -->
+        <label for="toggle" class="b_close_btn">
+          <i class="bi bi-x-circle-fill"></i>
+        </label>
+    </aside>
+
+    </article>
+    
+    <!-- NCsoft소개 -->
+    <section id="cont1">
+      <div class="intro_box">
+        <!-- 목표 -->
+        <div class="intro txtL">
+          <p>엔씨소프트는 즐거움으로 사람과 세상을 연결하는 글로벌 게임 기업을 추구합니다.<br />‘창의적 도전, 기술 혁신, 사회적 책임’의 가치 체계를 경영의 나침반으로 삼고,게임과 기술을 기반으로<br />최고의 경험과 서비스를 창출하여 인류 사회에 공헌하는 것을 궁극적인 목표로 삼고 있습니다.</p>
+        </div> 
+        <!-- 목표 박스 -->
+        <article>
+          <h3 class="hidden">퀄리티를 향한 진정성</h3>
+          <div class="target_box">
+            <figure>
+              <img src="./img/target_main01.jpg" alt="퀄리티를 향한 진정성">
+              <figcaption>
+                <i class="bi bi-plus-circle-fill openBtn01"></i>
+              </figcaption>
+            </figure>
+          </div>
+        </article>
+        <article>
+          <h3 class="hidden">새로운 시도를 멈추지 않는 열정</h3>
+          <div class="target_box">
+            <figure>
+              <img src="./img/target_main02.jpg" alt="새로운 시도를 멈추지 않는 열정">
+              <figcaption>
+                <i class="bi bi-plus-circle-fill openBtn02"></i>
+              </figcaption>
+            </figure>
+          </div>
+        </article>
+        <article>
+          <h3 class="hidden">즐거운 세상을 만들기 위한 끊임없는 도전</h3>
+          <div class="target_box">
+            <figure>
+              <img src="./img/target_main03.jpg" alt="즐거운 세상을 만들기 위한 끊임없는 도전">
+              <figcaption>
+                <i class="bi bi-plus-circle-fill openBtn03"></i>
+              </figcaption>
+            </figure>
+          </div>
+        </article>
+      </div>
+      <article class="overlay o_cont01">
+        <dl class="overlay_content">
+          <dt class="titleL">퀄리티를 향한 진정성</dt>
+          <dd class="txtL bold">1. 사용자 경험 개선</dd>
+          <dd>끊임없는 피드백 수집과 테스트를 통해, 작은 불편함도 놓치지 않고 개선합니다.사용자와 함께 성장하는 게임을 만드는 것을 최우선 가치로 삼습니다.</dd>
+          <dd class="txtL bold">2. 완성도 있는 디테일 추구</dd>
+          <dd>그래픽, 사운드, 인터랙션 등 모든 요소를 다듬어, 몰입을 방해하지 않는 경험을 제공합니다. 작은 차이가 최고의 완성도를 만든다는 믿음으로 개발합니다.
+          </dd>
+          <dd class="txtL bold">3. 품질 검증 프로세스</dd>
+          <dd>출시 전 수차례의 검증 단계를 거쳐, 언제나 최고의 안정성을 보장합니다. 안전성과 신뢰성을 지켜내는 과정이 곧 우리의 책임입니다.</dd>
+        </dl>
+        <button class="close_btn txtXL bold"><i class="bi bi-x-lg"></i></button>
+      </article>
+      <article class="overlay o_cont02">
+        <dl class="overlay_content">
+          <dt class="titleL">새로운 시도를 멈추지 않는 열정</dt>
+          <dd class="txtL bold">1. 최신 기술 도입</dd>
+          <dd>AI, 클라우드, 빅데이터 등 신기술을 빠르게 도입해 게임의 새로운 가능성을 열었습니다. 변화를 두려워하지 않고 언제나 혁신의 중심에 서 있습니다.
+          </dd>
+          <dd class="txtL bold">2. 플랫폼 확장</dd>
+          <dd>클라우드 게이밍까지 영역을 넓혀 언제 어디서나 즐길 수 있는 환경을 구축했습니다. 플랫폼의 경계를 허물며 새로운 세상을 연결합니다.
+          </dd>
+          <dd class="txtL bold">3. 글로벌 진출</dd>
+          <dd>해외 시장과 협력하며 전 세계 게이머들과 교류할 수 있는 생태계를 만들었습니다. 다양한 문화와 소통하며 게임이 가진 보편적 가치를 확장합니다.</dd>
+          <dd class="txtL bold">4. 장르 혁신</dd>
+          <dd>액션·캐주얼 등 다양한 장르를 실험해 새로운 재미를 제시했습니다. 도전이야말로 새로운 장르 를 개척하는 원동력입니다.</dd>
+        </dl>
+        <button class="close_btn txtXL bold"><i class="bi bi-x-lg"></i></button>
+      </article>
+      <article class="overlay o_cont03">
+        <dl class="overlay_content">
+          <dt class="titleL">퀄리티를 향한 진정성</dt>
+          <dd class="txtL bold">1. IP 확장 도전</dd>
+          <dd>게임 세계관을 소설, 웹툰, 드라마 등 다양한 미디어로 확장해 즐거움을 더했습니다. 콘텐츠의 확장은 하나의 경험을 더 풍부하게 완성합니다.
+          </dd>
+          <dd class="txtL bold">2. 사회공헌 활동</dd>
+          <dd>게임으로 얻은 가치를 공헌하며 모두 함께 즐거움을 느낄 수 있는 문화를 만들었습니다. 나눔은 또 다른 즐거움의 시작이라고 믿습니다.
+          </dd>
+          <dd class="txtL bold">3. 차세대 엔진 도입</dd>
+          <dd>언리얼 엔진 5를 적극 활용하여 현실에 가까운 경험을 제공하기 위해 과감히 투자했습니다. 새로운 기술은 미래 세대의 즐거움을 위한 초석입니다.</dd>
+          <dd class="txtL bold">4. 지속적인 업데이트</dd>
+          <dd>단발적 서비스에 머무르지 않고 꾸준한 콘텐츠 업데이트로 게이머들의 기대에 응했습니다. 지속성은 곧 게이머와의 약속을 지켜내는 길입니다.</dd>
+        </dl>
+        <button class="close_btn txtXL bold"><i class="bi bi-x-lg"></i></button>
+      </article>
+    </section>
+
+    <!-- 게임소개 카드 -->
+    <section id="cont2">
+      <h2 class="titleL">현실을 넘어 또 다른 세계로</h2>
+      <!-- 이미지슬라이드 -->
+      <article class="card">
+        <h3 class="hidden">게임 카드 스와이퍼</h3>
+        <div class="swiper mySwiper2">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="./img/card01.png" alt="리니지"></div>
+            <div class="swiper-slide"><img src="./img/card02.png" alt="아이온2"></div>
+            <div class="swiper-slide"><img src="./img/card03.png" alt="길드워2"></div>
+            <div class="swiper-slide"><img src="./img/card04.png" alt="블레이드소울"></div>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <!-- 기술 -->
+    <section id="cont3">
+      <h2 class="titleL">미래를 만드는 혁신기술</h2>
+      <div class="wrap03">
+        <div class="tech_box">
+          <article>
+            <h3 class="hidden">AI와 머신러닝</h3>
+            <img src="./img/icon01.png" alt="ai와머신러닝 아이콘">
+            <ul>
+              <li class="txtL bold yellow">AI & 머신러닝</li>
+              <li >NPC  지능향상, 동적 콘텐츠 생성, 개인화된 개인<br />경험을 위한 AI기술 개발</li>
+              <li>&#x25B6;지능형 NPC 시스템</li>
+              <li>&#x25B6;동적 난이도 조절</li>
+            </ul>
+          </article>
+          <article>
+            <h3 class="hidden">메타버스 플랫폼</h3>
+            <img src="./img/icon02.png" alt="메타버스 플랫폼 아이콘">
+            <ul>
+              <li class="txtL bold yellow">메타버스 플랫폼</li>
+              <li>현실과 가상이 융합된 새로운 디지털 세계,<br />차세대 소셜 게임 플랫폼 구축</li>
+              <li>&#x25B6;가상 강제 시스템</li>
+              <li>&#x25B6;실시간 사회적 상호작용</li>
+            </ul>
+          </article>
+          <article>
+            <h3 class="hidden">클라우드 게이밍</h3>
+            <img src="./img/icon03.png" alt="클라우드 게이밍 아이콘">
+            <ul>
+              <li class="txtL bold yellow">클라우드 게이밍</li>
+              <li>언제 어디서나 고품질 게임을 즐길 수 있는<br />클라우드 기반 게임 서비스</li>
+              <li>&#x25B6;실시간 스트리밍</li>
+              <li>&#x25B6;크로스 디바이스 연동</li>
+            </ul>
+          </article>
+          <article>
+            <h3 class="hidden">블록체인 기술</h3>
+            <img src="./img/icon04.png" alt="블록체인 기술 아이콘">
+            <ul>
+              <li class="txtL bold yellow">블록체인 기술</li>
+              <li>게임 내 자신의 진정한 소유권과 투명한<br />거래를 위한 블록체인 기술 도입</li>
+              <li>&#x25B6;NFT 게임 아이템</li>
+              <li>&#x25B6;플레이-투-원 시스템</li>
+            </ul>
+          </article>
+        </div>
+        <p class="txtL">엔씨소프트는AI, 메타버스, 클라우드, 블록체인 등 최첨단 기술로<br />게임의 새로운 패러다임을 제시합니다.</p>
+      </div>
+    </section>
+
+    <!-- 비전로드맵 -->
+    <section id="cont4">
+      <div class="load_total">
+        <h3 class="titleL">비전 로드맵</h3>
+        <div class="load">
+          <div class="load_left">
+            <!-- 로드맵 -->
+            <article class="load_box">
+              <h3 class="hidden">2024년</h3>
+              <img src="./img/line.png" alt="의미없는노란색막대기">
+              <div class="load_txt">
+                <ul>
+                  <li class="yellow">2024</li>
+                  <li class="txtL bold">AI 기반 개인화 게임</li>
+                  <li>플레이어 개인의 취향과 실력에 맞춘 AI 맞춤형 게임 경험 제공</li>
+                </ul>
+              </div>
+            </article>
+            <article class="load_box">
+              <h3 class="hidden">2025년</h3>
+              <img src="./img/line.png" alt="의미없는노란색막대기">
+              <div class="load_txt">
+                <ul>
+                  <li class="yellow">2025</li>
+                  <li class="txtL bold">메타버스 생태계 구축</li>
+                  <li>가상과 현실이 연결된 통합 메타버스 플랫폼 런칭</li>
+                </ul>
+              </div>
+            </article>
+            <article class="load_box">
+              <h3 class="hidden">2026년</h3>
+              <img src="./img/line.png" alt="의미없는노란색막대기">
+              <div class="load_txt">
+                <ul>
+                  <li class="yellow">2026</li>
+                  <li class="txtL bold">글로벌 클라우드 확장</li>
+                  <li>전 세계 어디서나 지연 없는 클라우드 게임 서비스 완성</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+
+          <article class="load_right">
+            <!-- gif -->
+            <img src="./img/vision.gif" alt="움직이는 이미지" class="my_gif">
+            <div class="p_s_btn">
+              <i class="bi bi-play-circle play_btn"></i>
+              <i class="bi bi-stop-circle stop_btn"></i>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 채용 -->
+    <section id="cont5">
+      <article class="emp_total">   
+        <!-- 채용박스 1 -->
+          <h3 class="titleL">Hello, New Player!</h3>
+          <article class="emp_box">
+            <ul>
+              <li><span class="blue bold">신입</span> &#x007C; Development</li>
+              <li class="emp_tag">
+                <span class="bg_b">&#x0023; C++</span>
+                <span class="bg_y">&#x0023; MSSQL</span>
+                <span class="bg_p">&#x0023; VisualStudio</span>
+              </li>
+              <li class="txtXL bold">&#x005B;계약직&#x005D; 게임서버 프로그래머 모집</li>
+              <li><span class="blue bold">D-58</span> &#x007C; 2025.11.14 까지</li>
+            </ul>
+          </article>
+          <!-- 채용박스 2 -->
+          <article class="emp_box">
+            <ul>
+              <li><span class="blue bold">신입</span> &#x007C; Development</li>
+              <li class="emp_tag">
+                <span class="bg_p">&#x0023; Jira</span>
+                <span class="bg_p">&#x0023; Perforce</span>
+                <span class="bg_g">&#x0023; MS_Office</span>
+              </li>
+              <li class="txtXL bold">&#x005B;계약직&#x005D; &#x005B;리니지 리마스터&#x005D; 빌드 관리자 모집</li>
+              <li><span class="blue bold">D-44</span> &#x007C; 2025.10.31 까지</li>
+            </ul>
+          </article>
+          <!-- 채용박스 3 -->
+          <article class="emp_box">
+            <ul>
+              <li><span class="blue bold">신입</span> &#x007C; Development</li>
+              <li class="emp_tag">
+                <span class="bg_b">&#x0023; Unreal5</span>
+                <span class="bg_b">&#x0023; UnrealEngine</span>
+              </li>
+              <li class="txtXL bold">&#x005B;AION2&#x005D; 내러티브 디자이너 모집</li>
+              <li><span class="blue bold">D-24</span> &#x007C; 2025.10.11 까지</li>
+            </ul>
+          </article>
+          <!-- 채용박스 4 -->
+          <article class="emp_box">
+            <ul>
+              <li><span class="blue bold">신입</span> &#x007C; Development</li>
+              <li class="emp_tag">
+                <span class="bg_p">&#x0023; Adobe_Photoshop</span>
+              </li>
+              <li class="txtXL bold">&#x005B;단기 계약직&#x005D; &#x005B;신규프로젝트&#x005D; 캐릭터 컨셉 아티스트 모집</li>
+              <li><span class="blue bold">D-58</span> &#x007C; 2025.11.14 까지</li>
+            </ul>
+          </article>
+            <!-- 더보기 버튼 -->
+        <button class="btn txtM"><i class="bi bi-plus"></i><span>공고 더보기</span></button>
+      <!-- 소식 -->
+        <div class="news_total">
+          <h2 class="titleL">"게임과 미래. 지금 여기의 이야기"</h2>
+          <!-- 소식박스 -->
+          <ul>
+            <li>
+              <article class="news_box">
+                <h3 class="hidden">뉴스1</h3>
+                <figure>
+                  <img src="./img/news01.jpg" alt="첫번째 뉴스">
+                  <figcaption>
+                    <p class="txtL bold">엔씨(NC) 리니지M, ‘BURNING HEART’ 업데이트 진행</p>
+                    <p class="txtM">2025.09.17</p>
+                  </figcaption>
+                </figure>
+              </article>
+            </li>
+            <li>
+              <article class="news_box">
+                <h3 class="hidden">뉴스2</h3>
+                <figure>
+                  <img src="./img/news02.jpg" alt="두번째 뉴스">
+                  <figcaption>
+                    <p class="txtL bold">TL, 대규모 업데이트 ‘NEW WAVE’실시··· 신규 무기 ‘마력구’ 도입</p>
+                    <p class="txtM">2025.09.17</p>
+                  </figcaption>
+                </figure>
+              </article>
+            </li>
+            <li>
+              <article class="news_box">
+                <h3 class="hidden">뉴스3</h3>
+                <figure>
+                  <img src="./img/news03.jpg" alt="세번째 뉴스">
+                  <figcaption>
+                    <p class="txtL bold">엔씨소프트 ‘아이온2’, 11월 19일 한국∙대만 출시 ∙∙∙ 사전예약 시작</p>
+                    <p class="txtM">2025.09.12</p>
+                  </figcaption>
+                </figure>
+              </article>
+            </li>
+          </ul>
+          <!-- 더보기 버튼 -->
+          <button class="btn txtM"><i class="bi bi-plus"></i><p>더보기</p></button>
+        </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <article>
+      <div class="f_top">
+        <!-- 하단 네비게이션 -->
+        <nav id="gnb02" class="txtS">
+          <ul>
+            <li>
+              <a href="#cont1" title="엔씨소프트" class="txtM bold">NCsoft</a>
+              <h3 class="hidden">기업소개</h3>
+              <ul>
+                <li><a href="#cont1" title="기업 소개">기업 소개</a></li>
+                <li><a href="#cont1" title="연혁">연혁</a></li>
+                <li><a href="#cont1" title="가치와 목표">가치와 목표</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#cont2" title="게임" class="txtM bold">게임</a>
+              <h3 class="hidden">게임</h3>
+              <ul>
+                <li><a href="#cont2" title="전체게임과 신작">전체게임&amp;신작</a></li>
+                <li><a href="#cont2" title="인기게임">인기게임</a></li>
+                <li><a href="#cont2" title="e스포츠와 커뮤니티">e스포츠&amp;커뮤니티</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#cont3" title="기술과 혁신" class="txtM bold">기술&amp;혁신</a>
+              <h3 class="hidden">기술과혁신</h3>
+              <ul>
+                <li><a href="#cont3" title="AI연구">AI연구</a></li>
+                <li><a href="#cont3" title="메타버스와 신규플랫폼">메타버스&amp;신규플랫폼</a></li>
+                <li><a href="#cont3" title="개발기술과 연구성과">개발기술&amp;연구성과</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#cont4" title="경영" class="txtM bold">경영</a>
+              <h3 class="hidden">경영</h3>
+              <ul>
+                <li><a href="#cont4" title="esg연혁">ESG 연혁</a></li>
+                <li><a href="#cont4" title="사회공헌과 다양성">사회공헌&amp;다양성</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#cont5" title="소식과 채용" class="txtM bold">소식&amp;채용</a>
+              <h3 class="hidden">소식과 채용</h3>
+              <ul>
+                <li><a href="#cont5" title="뉴스와 보도자료">뉴스&amp;보도자료</a></li>
+                <li><a href="#cont5" title="영상과 이벤트">영상&amp;이벤트</a></li>
+                <li><a href="#con5t" title="체용공고와 기업문화">채용공고&amp;기업문화</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </article>
+    <article>
+      <div class="f_bottom">
+        <div class="wrap02">
+          <!-- 로고 -->
+          <a href="#" title="홈페이지로 돌아가기">
+            <img src="./img/main_logo03.png" alt="로고">
+          </a>
+          <!-- 설명 -->
+          <p class="txtXS"><span class="bold">상호</span> (주)엔씨소프트  |  <span class="bold">공동대표</span> 김택진, 박병무  |  <span class="bold">사업자 등록번호</span> 000-00-00000<br /><span class="bold">통신판매업신고</span> 제2013-0000-0000호 사업자정보확인<br /><span class="bold">주소</span> 경기도 성남시 분당구 대왕판교로 644번길 12  |  <span class="bold">팩스</span> 02-0000-0000  |  <span class="bold">이메일</span>test@ncsoft.com</p>
+        </div>
+      </div>
+    </article>
+    <address class="txtS">Copyright &copy; NCSOFT Corporation. All Rights Reserved.</address>
+  </footer>
+
+
+  <!-- 메인 스와이퍼 슬라이드 -->
+  <script src="./script/swiper-bundle.min.js"></script>
+  <!-- 다른 스크립트 모음 -->
+  <script>
+    //1. 메인 슬라이드 이미지
+    var swiper = new Swiper('.mySwiper', {
+      cssMode:true,
+      loop:true,
+      autoplay:{
+        delay:7000,
+        disableOnInteraction:false,
+      },
+      navigation:{
+        nextEl:".swiper-button-next",
+        prevEl:".swiper-button-prev",
+      },
+      pagination:{
+        el:".swiper-pagination",
+        clickable:'true',
+      },
+    });
+
+    //2. 카드스와이퍼 슬라이드
+    var swiper2 = new Swiper(".mySwiper2", {
+      effect: "cards",
+      grabCursor: true,
+    });
+
+    //3. 메뉴 클릭시 해당 아이디 박스요소로 스크롤 
+    const menuLinks = document.querySelectorAll('#gnb > ul > li >  a');
+      //반복문 사용 => 각 링크에 이벤트 적용 후 해당 섹션 이동
+      //for(초기값;조건식;증감식){실행문}
+      for(let i=0;i<menuLinks.length;i++){
+        //클릭 이벤트 반복
+        menuLinks[i].addEventListener('click', function(e){
+          console.log(i); //0,1,2,3,4 출력확인
+          e.preventDefault(); //기본에빈트 클릭 제거 > 새로고침 안됨
+
+          //href값으로 이동시 section을 찾음
+          //속성값을 변수에 담기
+          const targetId = this.getAttribute('href').substring(1);
+          //위에서 지정된 변수값을 id값으로 저장 
+          const targetSection = document.getElementById(targetId);
+          console.log(targetSection); //출력 확인
+
+          const headerHeight = 130; //헤더 영역 높이만큼 값 설정
+
+          //각선택 section이 부드럽게 상단으로 올라오게하기
+          window.scrollTo({
+            top:targetSection.offsetTop-headerHeight, //선택 section상단 위치와 브라우저 상단과 동일한 위치로 이동
+            behavior:'smooth' //부드럽게 이동 
+          });
+        });
+      }
+
+      const menuLinks2 = document.querySelectorAll('#gnb02 > ul > li >  a');
+      //반복문 사용 => 각 링크에 이벤트 적용 후 해당 섹션 이동
+      //for(초기값;조건식;증감식){실행문}
+      for(let i=0;i<menuLinks.length;i++){
+        //클릭 이벤트 반복
+        menuLinks2[i].addEventListener('click', function(e){
+          console.log(i); //0,1,2,3,4 출력확인
+          e.preventDefault(); //기본에빈트 클릭 제거 > 새로고침 안됨
+
+          //href값으로 이동시 section을 찾음
+          //속성값을 변수에 담기
+          const targetId = this.getAttribute('href').substring(1);
+          //위에서 지정된 변수값을 id값으로 저장 
+          const targetSection = document.getElementById(targetId);
+          console.log(targetSection); //출력 확인
+
+          const headerHeight = 130; //헤더 영역 높이만큼 값 설정
+
+          //각선택 section이 부드럽게 상단으로 올라오게하기
+          window.scrollTo({
+            top:targetSection.offsetTop-headerHeight, //선택 section상단 위치와 브라우저 상단과 동일한 위치로 이동
+            behavior:'smooth' //부드럽게 이동 
+          });
+        });
+      }
+
+    // 4. overflow 닫기
+    // 오버레이 열기/닫기 기능
+    document.addEventListener('DOMContentLoaded', () => {
+      // 'openBtn' 클래스를 가진 모든 요소들을 선택합니다.
+      const openButtons = document.querySelectorAll('.openBtn01, .openBtn02, .openBtn03');
+      
+      // 'close_btn' 클래스를 가진 모든 요소들을 선택합니다.
+      const closeButtons = document.querySelectorAll('.close_btn');
+      
+      // 각 열기 버튼에 클릭 이벤트 리스너를 추가합니다.
+      openButtons.forEach(button => {
+        button.addEventListener('click', () => {
+          // 클릭된 버튼의 클래스명을 가져옵니다 (예: 'openBtn01')
+          const btnClass = button.className.split(' ').find(cls => cls.startsWith('openBtn'));
+          
+          if (btnClass) {
+            // 버튼 클래스에 해당하는 오버레이 클래스명을 만듭니다 (예: 'o_cont01')
+            const overlayClass = `o_cont${btnClass.slice(-2)}`;
+            
+            // 해당 오버레이 요소를 찾아서 'active' 클래스를 추가해 표시합니다.
+            const overlay = document.querySelector(`.${overlayClass}`);
+            if (overlay) {
+              overlay.classList.add('active');
+            }
+          }
+        });
+      });
+      
+      // 각 닫기 버튼에 클릭 이벤트 리스너를 추가합니다.
+      closeButtons.forEach(button => {
+        button.addEventListener('click', () => {
+          // 닫기 버튼의 부모 요소인 오버레이를 찾아서 'active' 클래스를 제거합니다.
+          const overlay = button.closest('article.active');
+          if (overlay) {
+            overlay.classList.remove('active');
+          }
+        });
+      });
+    });
+
+
+  // 5. 움짤 제어
+    const myGif = document.querySelector('.my_gif');
+    const playBtn = document.querySelector('.play_btn');
+    const stopBtn = document.querySelector('.stop_btn');
+
+    // 정지된 이미지 파일 경로 (GIF의 첫 프레임 등)
+    const staticImgSrc = './img/vision_img01.png'; 
+    // 원본 GIF 파일 경로
+    const originalGifSrc = './img/vision.gif';
+
+    // GIF를 재생하는 함수
+    function playGif() {
+      myGif.src = originalGifSrc;
+      playBtn.style.display = 'none'; // 재생 버튼 숨기기
+      stopBtn.style.display = 'block'; // 정지 버튼 보이기
+    }
+
+    // GIF를 멈추는 함수
+    function stopGif() {
+      myGif.src = staticImgSrc;
+      playBtn.style.display = 'block'; // 재생 버튼 보이기
+      stopBtn.style.display = 'none'; // 정지 버튼 숨기기
+    }
+
+    // 초기 상태: GIF는 재생 중이고 정지 버튼만 보입니다.
+    window.addEventListener('load', () => {
+        playBtn.style.display = 'none';
+    });
+
+    // 이벤트 리스너 추가
+    playBtn.addEventListener('click', playGif);
+    stopBtn.addEventListener('click', stopGif);
+  </script>
+</body>
+</html>
